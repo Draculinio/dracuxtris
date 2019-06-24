@@ -22,6 +22,10 @@ def tablero(screen):
 
 
 def juego(screen):
+    '''
+    **
+    **
+    '''
     for i in range(0,25):
         screen.addstr(i,10,'**')
         screen.addstr(i+1,10,'**')
@@ -35,17 +39,97 @@ def juego(screen):
     
         screen.refresh()
         time.sleep(0.1)
+    
+    '''
+    *
+    **
+     *
+    '''
     for i in range(0,24):
         screen.addstr(i,12,'*')
         screen.addstr(i+1,12,'**')
         screen.addstr(i+2,12,' *')
         screen.refresh()
         time.sleep(0.1)
-        screen.addstr(i,12,' ')
-        screen.addstr(i+1,12,'  ')
-        screen.addstr(i+2,12,' ')
+        if i<23:
+            screen.addstr(i,12,' ')
+            screen.addstr(i+1,12,'  ')
+            screen.addstr(i+2,12,'  ')
+            screen.refresh()
+        time.sleep(0.1)
+    
+    '''
+     *
+    **
+    *
+    '''
+    for i in range(0,24):
+        screen.addstr(i,14,' *')
+        screen.addstr(i+1,14,'**')
+        screen.addstr(i+2,14,'*')
         screen.refresh()
         time.sleep(0.1)
+        if i<23:
+            screen.addstr(i,14,'  ')
+            screen.addstr(i+1,14,'  ')
+            screen.addstr(i+2,14,' ')
+            screen.refresh()
+            time.sleep(0.1)
+
+    '''
+    **
+     *
+     *
+    '''
+    for i in range(0,24):
+        screen.addstr(i,16,'**')
+        screen.addstr(i+1,16,' *')
+        screen.addstr(i+2,16,' *')
+        screen.refresh()
+        time.sleep(0.1)
+        if i<23:
+            screen.addstr(i,16,'  ')
+            screen.addstr(i+1,16,'  ')
+            screen.addstr(i+2,16,'  ')
+            screen.refresh()
+            time.sleep(0.1)
+
+    '''
+    **
+    *
+    *
+    '''
+    for i in range(0,24):
+        screen.addstr(i,18,'**')
+        screen.addstr(i+1,18,'*')
+        screen.addstr(i+2,18,'*')
+        screen.refresh()
+        time.sleep(0.1)
+        if i<23:
+            screen.addstr(i,18,'  ')
+            screen.addstr(i+1,18,' ')
+            screen.addstr(i+2,18,' ')
+            screen.refresh()
+            time.sleep(0.1)
+    
+    '''
+    *
+    *
+    *
+    *
+    '''
+    for i in range(0,24):
+        screen.addstr(i,20,'**')
+        screen.addstr(i+1,20,'*')
+        screen.addstr(i+2,20,'*')
+        screen.refresh()
+        time.sleep(0.1)
+        if i<23:
+            screen.addstr(i,20,'  ')
+            screen.addstr(i+1,20,' ')
+            screen.addstr(i+2,20,' ')
+            screen.refresh()
+            time.sleep(0.1)
 
 #MAIN
 def main():
